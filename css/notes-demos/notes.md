@@ -340,9 +340,7 @@ Common font properties include font-family, font-size, font-weight, and font-sty
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Font Properties Demo</title>
+   <title>Font Properties Demo</title>
   <style>
     h1 {
       font-family: Arial, sans-serif;
@@ -391,9 +389,7 @@ Common text properties include text-align, text-transform, letter-spacing, line-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Properties Demo</title>
+   <title>Text Properties Demo</title>
   <style>
     h1 {
       text-align: center;
@@ -428,5 +424,562 @@ p {
   line-height: 1.5;
   text-indent: 20px;
 }
+
+```
+
+## Color Properties
+Color properties allow you to change the color of text and links.
+
+Use the color property for text color. You can also apply hover effects using :hover.
+
+### Demo
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Color Properties Demo</title>
+  <style>
+    h1 {
+      color: darkblue;
+    }
+    p {
+      color: darkred;
+    }
+    a {
+      color: green;
+      text-decoration: none;
+    }
+    a:hover {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heading with Color Properties</h1>
+  <p>This paragraph shows color properties.</p>
+  <a href="#">This is a link with color properties.</a>
+</body>
+</html>
+
+```
+### Colors Type
+Colors in CSS can be specified in multiple ways: using named colors, hexadecimal values, RGB values, and RGBA values (which include transparency).
+
+
+#### Named Colors: 
+Predefined color names such as red, green, blue, etc.
+
+```css
+color: red;
+```
+
+#### Hexadecimal: 
+Represented by # followed by 3 or 6 hexadecimal digits, such as #FF5733 or #F60.
+
+```css
+color: #FF5733;
+```
+
+#### RGB (Red, Green, Blue): 
+Specifies colors using rgb(red, green, blue) values, where each value ranges from 0 to 255.
+
+```css
+color: rgb(255, 87, 51);
+```
+
+#### RGBA (Red, Green, Blue, Alpha): 
+Similar to RGB but with an added alpha (opacity) value ranging from 0 (fully transparent) to 1 (fully opaque).
+
+```css
+color: rgba(255, 87, 51, 0.5); /* Semi-transparent orange */
+```
+
+#### Demo
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .named-color {
+      color: red; /* Named Color */
+    }
+    .hex-color {
+      color: #FF5733; /* Hexadecimal Color */
+    }
+    .rgb-color {
+      color: rgb(255, 87, 51); /* RGB Color */
+    }
+    .rgba-color {
+      color: rgba(255, 87, 51, 0.5); /* RGBA Color with 50% opacity */
+    }
+  </style>
+</head>
+<body>
+  <p class="named-color">This text is red (Named Color).</p>
+  <p class="hex-color">This text is orange (Hexadecimal Color #FF5733).</p>
+  <p class="rgb-color">This text is orange (RGB Color rgb(255, 87, 51)).</p>
+  <p class="rgba-color">This text is semi-transparent orange (RGBA Color rgba(255, 87, 51, 0.5)).</p>
+</body>
+</html>
+
+```
+
+## Background Properties
+Background properties control the background of elements, including colors and images.
+
+Common background properties include background-color, background-image, background-position, background-repeat, and background-size.
+
+Shorthand Usage:
+You can use the background shorthand property to combine all background-related properties into a single declaration.
+
+### Syntax
+```css
+{
+background: background-color background-image background-repeat background-position/background-size;
+}
+```
+
+### Example
+```css
+div {
+  background: lightgrey url('image.jpg') no-repeat center/cover;
+}
+```
+
+### Demo1 - background-color
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: lightblue; /* Background Color for the body */
+    }
+    .container {
+      background-color: lightgreen; /* Background Color for a div */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>This div has a light green background.</p>
+  </div>
+</body>
+</html>
+
+```
+
+### Demo2 - background image
+```box
+  1. The `background-image` property sets an image as the background.  
+  2. The `background-repeat` property controls whether the image repeats.  
+  3. The `background-position` property sets the starting position of the background image.  
+  4. The `background-size` property determines the size of the background image.  
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+        body {
+            background-image: url("../images/html.jpeg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 200 500;
+            background-attachment: fixed;
+        }
+        .box{
+            background-image:url("../images/image2.jpeg");
+            background-position: top right;
+        }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Page</h1>
+  <div class="box">
+    <p>Box paragraph</p>
+  </div>
+  <p>This page has a background image covering the entire body.</p>
+</body>
+</html>
+
+```
+
+# Box Model and Positioning
+The Box Model is the fundamental layout model in CSS. Every element on a webpage is a box composed of several layers
+
+Content: 
+  The actual content inside the element (e.g., text, image, etc.).  
+
+Padding: 
+  Space between the content and the element’s border.  
+
+Border: 
+  The border surrounding the padding and content.  
+
+Margin: 
+  Space outside the border, separating the element from other elements.
+
+## Box Model with Content, Padding, Border, and Margin
+Each box layer adds space around the content.
+
+The box-sizing property controls how the width and height 
+are calculated (content-box vs. border-box).
+
+### Demo (Box)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 5px solid blue;
+      margin: 30px;
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>This is the content inside the box.</p>
+  </div>
+</body>
+</html>
+```
+
+
+## Positioning
+
+CSS offers different ways to position elements on a page
+
+Static Positioning: This is the default; elements are placed in the normal document flow.
+
+Relative Positioning: Elements are positioned relative to their normal position in the flow.
+
+Absolute Positioning: Elements are positioned relative to their nearest positioned ancestor (or the viewport if none exists).
+
+Fixed Positioning: Elements are positioned relative to the viewport and do not move when the page scrolls.
+
+z-index Property: Controls the stacking order of positioned elements (higher z-index appears in front of lower ones).
+
+### Static and Relative Positioning
+
+Static: Elements appear in the normal flow of the document.
+Relative: Elements can be offset using top, left, right, and bottom but still occupy their original space.
+
+### Demo
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box-static {
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+    }
+    .box-relative {
+      width: 150px;
+      height: 100px;
+      background-color: lightgreen;
+      position: relative;
+      top: 20px; /* Move 20px down */
+      left: 20px; /* Move 20px right */
+    }
+  </style>
+</head>
+<body>
+  <div class="box-static">
+    <p>Static Position</p>
+  </div>
+  <div class="box-relative">
+    <p>Relative Position</p>
+  </div>
+</body>
+</html>
+
+```
+
+### Absolute Positioning
+Absolute: Elements are removed from the normal flow and placed relative to their nearest positioned ancestor or the viewport.
+
+### Demo
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: lightgray;
+    }
+    .box-absolute {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      position: absolute;
+      top: 10px; /* Position within the container */
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>This is a container.</p>
+    <div class="box-absolute">
+      <p>Absolute Box</p>
+    </div>
+  </div>
+</body>
+</html>
+
+```
+
+## z-index Property
+The z-index property controls the stack order of overlapping elements.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box1 {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      position: relative;
+      z-index: 1; /* Lower z-index */
+    }
+    .box2 {
+      width: 150px;
+      height: 150px;
+      background-color: lightgreen;
+      position: relative;
+      top: -50px;
+      left: 50px;
+      z-index: 2; /* Higher z-index, will appear on top */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
+
+```
+
+## Display: inline vs inline-block vs block
+
+display: inline;
+Inline elements do not start on a new line and only take as much width as needed. Padding, margin, height, and width properties do not apply.
+
+display: inline-block;
+Like inline elements, but padding, margins, height, and width can be applied.
+
+display: block;
+Block elements start on a new line and take up the full width available.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs Inline-Block vs Block</title>
+    <style>
+        .inline {
+            display: inline;
+            background-color: lightblue;
+            padding: 10px 20px;
+            border: 2px solid navy;
+            margin: 5px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            border: 2px solid darkred;
+            width: 150px;
+            height: 50px;
+            margin: 5px;
+        }
+
+        .block {
+            display: block;
+            background-color: lightgreen;
+            padding: 10px 20px;
+            border: 2px solid green;
+            margin: 5px;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inline">Inline Element</div>
+    <div class="inline">Another Inline</div>
+    <br>
+    <div class="inline-block">Inline-block Element</div>
+    <div class="inline-block">Another Inline-block</div>
+    <br>
+    <div class="block">Block Element</div>
+    <div class="block">Another Block</div>
+</body>
+</html>
+
+
+## Box Shadow and Text Shadow
+box-shadow
+Adds shadows around an element’s frame, which can create depth and visual interest.
+
+text-shadow
+Adds shadows to text, which can make text stand out.
+
+
+```css
+<style>
+  .box { width: 200px; height: 100px; background-color: lightblue; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); margin: 10px; 
+  }
+  .text { 
+    font-size: 24px; 
+    color: navy; 
+    text-shadow: 2px 2px 5px gray; }
+</style>
+
+<div class="box">This is a box with shadow</div>
+<p class="text">Text with shadow effect</p>
+
+```
+
+## CSS Grid Layout
+CSS Grid is a two-dimensional layout system that allows you to arrange content into rows and columns.
+
+```css
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: lightgray;
+  }
+  
+  .grid-item {
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+
+```
+
+## CSS Flexbox Layout
+Flexbox is a one-dimensional layout model that helps align and distribute space among items in a container, even when the size of the items is unknown.
+
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .flex-item {
+    background-color: coral;
+    padding: 20px;
+  }
+</style>
+
+<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+  <div class="flex-item">Item 3</div>
+</div>
+
+
+##  Responsive Design with Media Queries
+Responsive design makes your web page adapt to different screen sizes and devices, ensuring it looks good on mobile, tablet, and desktop. Media queries are used to apply different styles depending on the screen width or device.
+
+```css
+<style>
+  .responsive-box {
+    background-color: coral;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* For screens wider than 600px */
+  @media (min-width: 600px) {
+    .responsive-box {
+      background-color: lightblue;
+      width: 50%;
+    }
+  }
+
+  /* For screens wider than 900px */
+  @media (min-width: 900px) {
+    .responsive-box {
+      background-color: lightgreen;
+      width: 30%;
+    }
+  }
+</style>
+
+<div class="responsive-box">Resize the window to see changes</div>
+
+```
+
+## Viewport Units
+Viewport units like vw (viewport width) and vh (viewport height) allow elements to scale based on the size of the viewport.
+
+```css
+<style>
+  .viewport-box {
+    width: 50vw;
+    height: 50vh;
+    background-color: lightcoral;
+    text-align: center;
+    line-height: 50vh;
+  }
+</style>
+
+<div class="viewport-box">50% of Viewport</div>
+
+```
+## CSS Variables
+CSS variables (also known as custom properties) allow you to store values that can be reused throughout your CSS.
+
+```css
+<style>
+  :root {
+    --main-bg-color: coral;
+    --main-text-color: white;
+  }
+
+  .variable-box {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 20px;
+  }
+</style>
+
+<div class="variable-box">Using CSS Variables</div>
 
 ```
