@@ -9,7 +9,7 @@ Practice using font and text properties to style elements.
 
 2. Apply the following font properties:
 
-    * Use ``font-family` to change the font of a heading.
+    * Use `font-family` to change the font of a heading.
 
     * Set the `font-size` of paragraphs to 20px.
     * Apply `font-weight: bold` to the main heading.
