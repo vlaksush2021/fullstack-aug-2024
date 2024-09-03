@@ -1,11 +1,12 @@
+# fullstack-aug-2024-schedules
+
 ## Week 1
-
-### Introduction to Web Technology
-
+### Part 1
+**Introduction to Web Technology**
 * Overview of Web Technology
 * Role of HTML in Web Development
 
-### HTML Tags, Elements, Attributes
+**HTML Tags, Elements, Attributes**
 
 * Understanding HTML Tags
 * Common HTML Elements
@@ -15,7 +16,7 @@
 * etc.
 * HTML Attributes and their Usage
   
-### HTML Images and Tables
+**HTML Images and Tables**
 * Embedding Images in HTML
 * Image Tags
 * Alt Text
@@ -24,8 +25,9 @@
 * Table Structure
 * Table Rows and Columns
 * Table Attributes
-
-### HTML Links, Lists, Forms
+* 
+### Part 2
+**HTML Links, Lists, Forms**
 * Creating Hyperlinks in HTML
 * Anchor Tags
 * Linking to External Resources
@@ -40,28 +42,30 @@
 * Form Attributes
 
 ## Week 2
-
-### CSS Styling Approaches
+### Part 1
+**CSS Styling Approaches**
 
 * Inline
 * Internal
 * External
 
-### Selectors and Styling
+**Selectors and Styling**
 
 * Basic Selectors
 * Element Selector
 * Class Selector
 * ID Selector
 
-### Typography, Colors, and Background Properties
+### Part 2
+**Typography, Colors, and Background Properties**
 
 * Font Properties
 * Text Properties
 * Color Properties
 * Background Properties
 
-### Box Model and Positioning
+
+**Box Model and Positioning**
 
 * Understanding the Box Model
 * Content
@@ -74,3 +78,74 @@
 * Relative Positioning
 * Absolute Positioning
 * z-index Property
+
+
+## Week 3
+### Part 1
+
+**JavaScript Basics:**
+
+* Overview of JavaScript
+* Role of JavaScript in Web Development
+* Basics of JavaScript Syntax
+* Setting up JavaScript in a Web Page
+
+**Control Statements:**
+
+* Conditional Statements (if, else, switch)
+* Looping Statements (for, while)
+* Control Flow in JavaScript
+
+### Part 2
+
+**Primary Data Types and Objects in JavaScript:**
+
+* Numbers, Strings, Booleans
+* Undefined and Null
+* Type Coercion and Conversion
+
+* Introduction to Objects
+* Date Object
+* Math Object
+* Working with Arrays
+* Array Methods
+* Iterating through Arrays
+
+**Functions and Events:**
+
+* Declaring and Invoking Functions
+* Function Parameters and Return Values
+* Introduction to Events in JavaScript
+
+## Week 4
+### Part 1
+**DOM Events and Event Listeners:**
+
+* Understanding the DOM (Document Object Model)
+* Handling DOM Events
+* Implementing Event Listeners
+
+**Validation and Error Handling:**
+
+* Form Validation in JavaScript
+* Error Handling with Try-Catch
+* Handling Exceptions
+
+### Part 2
+**Functional Programming in JS:**
+
+* Introduction to Functional Programming
+* Functions as First-Class Citizens
+* Higher-Order Functions and Callbacks
+* Map, Filter, and Reduce Functions
+
+**Asynchronous Programming in JS:**
+
+* Asynchronous JavaScript
+* Callbacks and Promises
+* Async/Await for Asynchronous Operations
+
+
+## Week 5
+
+**Note** We will provide updates from Week 5 at a later time. Please check back! 😊
