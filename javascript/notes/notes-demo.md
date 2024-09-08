@@ -26,7 +26,7 @@
 ```
  Function : 
  Function: A function is a block of reusable code designed to perform a specific task. In the example, the addition() function retrieves values,calculates the sum, and updates the result on the webpage.
-```
+
 
 ## Role of Javascript in Web Development
 ### Notes
