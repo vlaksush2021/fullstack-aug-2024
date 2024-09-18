@@ -147,5 +147,30 @@
 
 
 ## Week 5
+### Part 1
+**Node and NPM Installation**
 
-**Note** We will provide updates from Week 5 at a later time. Please check back! 😊
+* Installing Node.js and NPM  
+* Running Node.js Scripts  
+* Node.js Standard Libraries  
+
+**Node.js Standard Libraries**
+* File System (fs) Module  
+* Events Module  
+* Streams Module  
+
+* HTTP Module  
+* Creating a Simple HTTP Server with simple Service  
+
+### Part 2
+**Express.js**
+* Introduction to Express.js  
+* Understanding Middleware in Express  
+
+**Understanding REST Services**
+* Introduction to REST Services  
+* Understanding Services, Controllers, Routers  
+* Writing Simple CRUD REST Services  
+
+
+**Note** We will provide updates from Week 6 at a later time. Please check back! 😊
