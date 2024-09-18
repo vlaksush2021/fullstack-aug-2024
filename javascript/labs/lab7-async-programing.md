@@ -1,4 +1,4 @@
-## Lab7 - Handle Asynchronous File Reading with Callbacks   
+## Lab7-1 - Handle Asynchronous File Reading with Callbacks   
 ## Objective
 Learn how to use callbacks to handle asynchronous tasks like reading a file.   
 ## Steps
@@ -8,7 +8,7 @@ Learn how to use callbacks to handle asynchronous tasks like reading a file.
 
 <hr />
 
-## Lab8 -  Fetching Data with Promises
+## Lab7-2 -  Fetching Data with Promises
 ## Objective  
 Use promises to fetch data asynchronously and handle success and failure cases.  
 ## Steps
@@ -18,7 +18,7 @@ Use promises to fetch data asynchronously and handle success and failure cases.
 
 <hr />
 
-## Lab9 - Processing Multiple Async Tasks with Async/Await
+## Lab7-3 - Processing Multiple Async Tasks with Async/Await
 ## Objective
 Understand how to manage multiple asynchronous tasks using async/await.
 ## Steps 
