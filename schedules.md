@@ -172,9 +172,7 @@
 
 
 # Week 6 - React.js
-
-## **React.js-Day 1: Introduction and Core Concepts**
-
+## **Day 1: Introduction and Core Concepts**
 ### Introduction to React and JSX
 - What is React?
 - React as a library for building user interfaces (UI)
@@ -194,7 +192,7 @@
 - Event handling (onClick, onChange)
 - Hands-on: Build a simple interactive app (like a counter or input field) to manage state and handle user interactions
 
-## **React.js-Day 2: Component Lifecycle and Forms in Functional Components**
+## **Day 2: Component Lifecycle and Forms in Functional Components**
 
 ### `useEffect` Hook for Side Effects
 - Introduction to **side effects** in React (e.g., data fetching, subscriptions)
@@ -217,9 +215,7 @@
 
 
 # Week 7 - React.js
-
-## **React.js-Day 3: Advanced Hooks, Context API, and Performance Optimization**
-
+## **Day 3: Advanced Hooks, Context API, and Performance Optimization**
 ### Advanced React Hooks
 - Introduction to the `useRef` hook:
   - Managing references to DOM elements
@@ -246,7 +242,7 @@
   - Memoizing functions to avoid unnecessary re-creations of handlers
 - Hands-on: Optimize a list filtering app using `React.memo`, `useMemo`, and `useCallback`
 
-## **React.js-Day 4: Navigation with Reach Router and API Integration**
+## **Day 4: Navigation with Reach Router and API Integration**
 
 ### Introduction to Reach Router
 - What is **Reach Router** and how is it different from React Router?
@@ -269,7 +265,7 @@
 
 ## Week 8 - React.js
 
-## **React.js-Day 5: State Management with Redux and Testing in React**
+## **Day 5: State Management with Redux and Testing in React**
 
 ### Introduction to Redux
 - Why use Redux for state management?
