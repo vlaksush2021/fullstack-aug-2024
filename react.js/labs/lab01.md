@@ -5,5 +5,6 @@ Create two simple functional components where one passes props to the other, dis
 
 ### Steps:
 * Set up a React project.
-* Create a parent component that sends information (like product name and price) to a child component.
+* Create a Child Component named `Product`
+* From parent component(App) send information (like product name and price) to a child component.(Product)
 * Display the product details dynamically using props.
