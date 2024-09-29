@@ -54,6 +54,7 @@
 //Day2 - Fetching Data - App.js
 import React, { useState } from 'react';
 import DataFetchingComponent from './day2/DataFetchingComponent';
+import UserComponet from './day2/UserComponent';
 function App() {
 
   return (
@@ -62,6 +63,7 @@ function App() {
       <hr color="red"/>
 
       <DataFetchingComponent />
+      {/* <UserComponet /> */} 
     </div>
   );
 }
