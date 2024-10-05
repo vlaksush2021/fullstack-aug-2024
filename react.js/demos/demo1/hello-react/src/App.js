@@ -51,10 +51,54 @@
 
 
 
-//Day2 - Fetching Data - App.js
+// //Day2 - Fetching Data - App.js
+// import React, { useState } from 'react';
+// import DataFetchingComponent from './day2/DataFetchingComponent';
+// import UserComponet from './day2/UserComponent';
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <DataFetchingComponent />
+//       {/* <UserComponet /> */} 
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// //Day3 - Controlled Component
+// import React, { useState } from 'react';
+// import LoginForm from './form-demos/LoginForm';
+
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <LoginForm />
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+//Day3 - Uncontrolled Component
 import React, { useState } from 'react';
-import DataFetchingComponent from './day2/DataFetchingComponent';
-import UserComponet from './day2/UserComponent';
+import LoginForm from './form-demos/LoginForm';
+import LoginForm2 from './form-demos/LoginForm2';
+
 function App() {
 
   return (
@@ -62,8 +106,8 @@ function App() {
       <h1>Learning React </h1>
       <hr color="red"/>
 
-      <DataFetchingComponent />
-      {/* <UserComponet /> */} 
+      <LoginForm2 />
+
     </div>
   );
 }
