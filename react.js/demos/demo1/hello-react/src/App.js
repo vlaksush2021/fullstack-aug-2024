@@ -94,10 +94,54 @@
 
 
 
-//Day3 - Uncontrolled Component
+// //Day3 - Uncontrolled Component
+// import React, { useState } from 'react';
+// import LoginForm2 from './form-demos/LoginForm2';
+
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <LoginForm2 />
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// //Day3 - Advanced React Hooks
+// import React, { useState } from 'react';
+// import LoginForm from './adv-hooks/LoginForm';
+
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <LoginForm />
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+//Day3 - Custom Hook
 import React, { useState } from 'react';
-import LoginForm from './form-demos/LoginForm';
-import LoginForm2 from './form-demos/LoginForm2';
+import LoginForm2 from './adv-hooks/LoginForm2';
+
 
 function App() {
 

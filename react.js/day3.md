@@ -35,3 +35,35 @@
 ```js
     <input type="text" value="username" />
 ```
+
+
+# Advanced React Hooks
+
+*  `useRef` manages references to DOM elements and persistent values without causing re-renders.
+
+* `useReducer` handles complex state logic efficiently, especially when managing multiple  related state values.
+
+
+* useReducer - React Hook which is used to manage complex state
+
+* How ?
+    const [a, SetA] = useState(); // one action
+
+    const [b,dispatch] = useReducer(reducer_fn, state)
+        // it can be more than one action => 
+
+* useReducer gives you a state value and a function(dispatch) to trigger specific updates through a reducer function that decides how to change the state.
+
+
+# Custom Hook 
+* Its just a function that allows us to encapsulate logic we want to `reuse`.  
+* Hook starts with `use`.  
+* Reusability, Separation of Concerns, Cleaner Code.  
+
+
+## Steps
+1. Creating the Custom Hook `useFormFields`
+
+2. Using the hook in the Component
+
+
