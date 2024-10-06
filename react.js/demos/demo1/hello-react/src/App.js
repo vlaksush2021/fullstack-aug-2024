@@ -202,25 +202,18 @@
 
 //Day4 - useMemo
 import React, { useState } from 'react';
-import ParentComponet from './Performance/ParentComponet';
+import EmployeeManagement from './Performance/EmployeeManagement';
 
 
 
 function App() {
-
-  const employeeList = [
-    {id:101,name:"bala",salary:1000},
-    {id:102,name:"peter",salary:2000},
-    {id:103,name:"mohammed",salary:3000},
-  ]
-
 
   return (
     <div style={{ textAlign: 'left'}}>
       <h1>Learning React </h1>
       <hr color="red"/>
 
-      <ParentComponet />
+      <EmployeeManagement />
 
     </div>
   );
