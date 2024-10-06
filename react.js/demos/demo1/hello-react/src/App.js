@@ -138,19 +138,89 @@
 
 
 
-//Day3 - Custom Hook
+// //Day3 - Custom Hook
+// import React, { useState } from 'react';
+// import LoginForm2 from './adv-hooks/LoginForm2';
+// function App() {
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <LoginForm2 />
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+// //Day4 - Context API
+// import React, { useState } from 'react';
+// import A from './Context-Demos/A';
+// import NameContext from './Context-Demos/NameContext';
+
+// function App() {
+//   const org = "ABC Technologies"; //props
+
+
+//   const employeeList = [
+//     {id:101,name:"bala",salary:1000},
+//     {id:102,name:"peter",salary:2000},
+//     {id:103,name:"mohammed",salary:3000},
+//   ]
+
+//   // const [org,setOrg] = useState("ABC Technologies");
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//     <NameContext.Provider value={{org,employeeList}}>
+//      <A />
+//      </NameContext.Provider>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+//Day4 - useMemo
 import React, { useState } from 'react';
-import LoginForm2 from './adv-hooks/LoginForm2';
+import ParentComponet from './Performance/ParentComponet';
+
 
 
 function App() {
+
+  const employeeList = [
+    {id:101,name:"bala",salary:1000},
+    {id:102,name:"peter",salary:2000},
+    {id:103,name:"mohammed",salary:3000},
+  ]
+
 
   return (
     <div style={{ textAlign: 'left'}}>
       <h1>Learning React </h1>
       <hr color="red"/>
 
-      <LoginForm2 />
+      <ParentComponet />
 
     </div>
   );
