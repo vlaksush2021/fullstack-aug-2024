@@ -40,8 +40,8 @@
 //           <td><Student studCount = {studCount} studHandler={studCountHandler} /></td>
 //         </tr>
 //       </table>
-      
-     
+
+
 
 //     </div>
 //   );
@@ -200,22 +200,137 @@
 
 
 
-//Day4 - useMemo
-import React, { useState } from 'react';
-import EmployeeManagement from './Performance/EmployeeManagement';
+// //Day4 - useMemo
+// import React, { useState } from 'react';
+// import EmployeeManagement from './Performance/EmployeeManagement';
 
 
+
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left'}}>
+//       <h1>Learning React </h1>
+//       <hr color="red"/>
+
+//       <EmployeeManagement />
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// //Day5 - Reach Router
+// import React from 'react';
+// import { Link, Router } from '@reach/router';
+
+// const Home = () => {
+//   return (
+//     <div>
+//       <h3>Home Page</h3>
+//     </div>
+//   )
+// }
+
+// const About = () => {
+//   return (
+//     <div>
+//       <h3>Aboutus Page</h3>
+//     </div>
+//   )
+// }
+
+// const Contact = () => {
+//   return (
+//     <div>
+//       <h3>Contactus Page</h3>
+//     </div>
+//   )
+// }
+
+// function App() {
+
+//   return (
+//     <div style={{ textAlign: 'left' }}>
+//       <h1>Learning React </h1>
+//       <div align="right">
+//         <Link to="/">Home</Link> | 
+//         <Link to="/about">About us</Link> | 
+//         <Link to="/about">Contat us</Link>
+//       </div>
+//       <hr color="red" />
+
+//       <Router>
+//         <Home path="/" />
+//         <About path="/about" />
+//         <Contact path="/contact" />
+//       </Router>
+
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+//Day5 - React Router
+import React from 'react';
+import {Routes, Route, BrowserRouter as Router, Link} from 'react-router-dom';
+import Help from './Router-Demos/Help';
+
+const Home = () => {
+  return (
+    <div>
+      <h3>Home Page</h3>
+    </div>
+  )
+}
+
+const About = () => {
+  return (
+    <div>
+      <h3>Aboutus Page</h3>
+    </div>
+  )
+}
+
+const Contact = () => {
+  return (
+    <div>
+      <h3>Contactus Page</h3>
+    </div>
+  )
+}
 
 function App() {
-
   return (
-    <div style={{ textAlign: 'left'}}>
+    <Router>
+    <div style={{ textAlign: 'left' }}>
       <h1>Learning React </h1>
-      <hr color="red"/>
+      <div align="right">
+        <Link to="/">Home</Link> | 
+        <Link to="/about">About us</Link> | 
+        <Link to="/about">Contat us</Link> |
+        <Link to="/help">Help</Link>
+      </div>
+      <hr color="red" />
 
-      <EmployeeManagement />
+      <Routes>
+        <Route path="/" element={<Home />}  />
+        <Route  path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/help" element={<Help />} />
+      </Routes>
+
 
     </div>
+    </Router>
   );
 }
 

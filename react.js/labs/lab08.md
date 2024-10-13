@@ -1,4 +1,4 @@
-## Lab
+## Lab - Performance
 ### Lab Objective:
 Build a list of tasks with an option to add new tasks and optimize it using React.memo, useMemo,
 and useCallback.

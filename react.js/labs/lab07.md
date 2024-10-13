@@ -1,4 +1,4 @@
-## Lab
+## Lab - Context API
 ### Objective
 Build a global user authentication system using the Context API, where the app shares authentication state across multiple components (e.g., login status).
 
