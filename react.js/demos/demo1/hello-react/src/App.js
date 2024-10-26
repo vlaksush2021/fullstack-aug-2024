@@ -13,6 +13,8 @@
 //   }
 //   const org = "ABC Products";
 
+import CounterComponent from "./redux-demos/components/CounterComponent";
+
 //   const [empCount,setEmpCount] = useState(0);
 //   const [studCount,setstudCount] = useState(0);
 
@@ -522,74 +524,94 @@
 // export default App;
 
 
-//API Integrationand Handling different States
-import React, { useState, useEffect } from 'react';
-import { Router, Link } from '@reach/router';
+// //API Integrationand Handling different States
+// import React, { useState, useEffect } from 'react';
+// import { Router, Link } from '@reach/router';
 
-const Home = () => {
-  return (
-    <div>
-      <h3>Home Page</h3>
-    </div>
-  )
-}
+// const Home = () => {
+//   return (
+//     <div>
+//       <h3>Home Page</h3>
+//     </div>
+//   )
+// }
 
-const Posts = () => {
+// const Posts = () => {
 
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+//   const [posts, setPosts] = useState([]);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(res => res.json())
-      .then(res => {
-        setPosts(res)
-        setLoading(false);
-      }
-      )
-      .catch(err => setError(err))
-  })
+//   useEffect(() => {
+//     fetch('https://jsonplaceholder.typicode.com/posts')
+//       .then(res => res.json())
+//       .then(res => {
+//         setPosts(res)
+//         setLoading(false);
+//       }
+//       )
+//       .catch(err => setError(err))
+//   })
 
-  if (loading) return <p>Loading Posts</p>
+//   if (loading) return <p>Loading Posts</p>
 
-  if (error)
-    return <p>Error : {error} </p>
+//   if (error)
+//     return <p>Error : {error} </p>
 
-  return (
-    <div>
-      <h3>Posts</h3>
+//   return (
+//     <div>
+//       <h3>Posts</h3>
 
-      <ul>
-        {
-          posts.map((post) => {
-            return <li key={post.id}>
-              {post.title}
-            </li>
-          })
-        }
-      </ul>
-    </div>
-  )
-}
+//       <ul>
+//         {
+//           posts.map((post) => {
+//             return <li key={post.id}>
+//               {post.title}
+//             </li>
+//           })
+//         }
+//       </ul>
+//     </div>
+//   )
+// }
 
+
+// function App() {
+//   return (
+
+//     <div style={{ textAlign: 'left' }}>
+//       <h1>Learning React </h1>
+
+//       <div align="right">
+//         <Link to="/" >Home</Link> |
+//         <Link to="/posts" > Posts</Link>
+//       </div>
+
+//       <hr color="red" />
+//       <Router>
+//         <Home path="/" />
+//         <Posts path="/posts" />
+//       </Router>
+//     </div>
+
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+//Redux - App
 
 function App() {
   return (
 
     <div style={{ textAlign: 'left' }}>
-      <h1>Learning React </h1>
-
-      <div align="right">
-        <Link to="/" >Home</Link> |
-        <Link to="/posts" > Posts</Link>
-      </div>
-
-      <hr color="red" />
-      <Router>
-        <Home path="/" />
-        <Posts path="/posts" />
-      </Router>
+      <h2>Redux Demo</h2>
+      <CounterComponent />
     </div>
 
   );
