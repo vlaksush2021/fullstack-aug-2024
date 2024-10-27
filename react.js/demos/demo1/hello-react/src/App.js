@@ -14,6 +14,8 @@
 //   const org = "ABC Products";
 
 import CounterComponent from "./redux-demos/components/CounterComponent";
+import GreetingComponent from "./TestDemos/GreetingComponent";
+import MyButton from "./TestDemos/MyButton";
 
 //   const [empCount,setEmpCount] = useState(0);
 //   const [studCount,setstudCount] = useState(0);
@@ -604,14 +606,31 @@ import CounterComponent from "./redux-demos/components/CounterComponent";
 
 
 
-//Redux - App
+// //Redux - App
+
+// function App() {
+//   return (
+
+//     <div style={{ textAlign: 'left' }}>
+//       <h2>Redux Demo</h2>
+//       <CounterComponent />
+//     </div>
+
+//   );
+// }
+
+// export default App;
+
+
+//Testing - App
 
 function App() {
   return (
 
     <div style={{ textAlign: 'left' }}>
-      <h2>Redux Demo</h2>
-      <CounterComponent />
+      <h2>Testing Demos</h2>
+     {/* <MyButton label="Submit Me" /> */}
+     <GreetingComponent />
     </div>
 
   );
